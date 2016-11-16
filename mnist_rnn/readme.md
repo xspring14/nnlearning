@@ -6,3 +6,4 @@
 
 * added: save and restore the model
 
+* mnist\_rnn\_multi.py: using 2 stacked lstm layers, after 10 epochs the accuracy is 97.93%
