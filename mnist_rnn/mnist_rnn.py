@@ -8,7 +8,7 @@ from utee import Prefetcher
 n_units=90
 n_input=28
 seq_len=28
-n_epochs=5
+n_epochs=10
 n_classes=10
 batch_size=60
 
@@ -106,7 +106,7 @@ with tf.Session() as sess:
 	cor_sum=0.0
 	for step in range(n_test_steps):
 
-		tempX, y_val=val_prefetcher.next_batch()
+		tempX, y_val=test_prefetcher.next_batch()
 
 		X_val=[]
 
