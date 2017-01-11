@@ -1,9 +1,5 @@
 import theano
-
 import numpy as np
-
-__author__ = 'uyaseen'
-
 
 def uniform(shape, scale=0.08):
     return np.asarray(np.random.uniform(
