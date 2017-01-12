@@ -45,8 +45,8 @@ class Prefetcher(object):
 
 if __name__ == '__main__':
 
-    imgs_dir = "/home/xu/data/scut/"
-    imgs_list = "/home/xu/data/scut/val100.txt"
+    imgs_dir = "/home/xu/data/"
+    imgs_list = "/home/xu/data/val100.txt"
     prefetcher = Prefetcher(imgs_dir, imgs_list, 64, 150)
     x_batches, l_batches, y_batches = prefetcher.next_batch()
 
