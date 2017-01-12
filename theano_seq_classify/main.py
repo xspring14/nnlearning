@@ -18,9 +18,9 @@ def train():
 
     print "loading data..."
     batch_size = 64
-    imgs_dir = "/home/xu/data/scut/"
-    train_imgs_list = "/home/xu/data/scut/train100.txt"
-    test_imgs_list = "/home/xu/data/scut/val100.txt"
+    imgs_dir = "/home/xu/data/"
+    train_imgs_list = "/home/xu/data/train100.txt"
+    test_imgs_list = "/home/xu/data/val100.txt"
 
     train_prefetcher = Prefetcher(imgs_dir, train_imgs_list, batch_size)
     test_prefetcher = Prefetcher(imgs_dir, test_imgs_list, batch_size)
